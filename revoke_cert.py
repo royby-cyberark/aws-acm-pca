@@ -1,12 +1,8 @@
 import argparse
+import os
 from OpenSSL import crypto
 
 import boto3
-
-parser = argparse.ArgumentParser()
-parser.add_argument('--ca-arn', required=True)
-parser.add_argument('--cert-arn', required=True)
-args = parser.parse_args()
 
 client = boto3.client('acm-pca')
 
@@ -34,4 +30,25 @@ def revoke_cert(ca_arn, cert_arn):
 
 
 if __name__ == "__main__":
-    revoke_cert(ca_arn=args.ca_arn, cert_arn=args.cert_arn)
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--ca-arn', required=True)
+    parser.add_argument('--cert-arn', required=False)
+    args = parser.parse_args()
+
+    if (args.cert_arn):
+        revoke_cert(ca_arn=args.ca_arn, cert_arn=args.cert_arn)
+
+    cert_arns = []
+    issued_certs_file = 'issued_certs'
+    if os.path.isfile(issued_certs_file):
+        with open(issued_certs_file, 'r') as file:
+            cert_arns = file.readlines()
+
+    for cert_arn in cert_arns:
+        revoke_cert(ca_arn=args.ca_arn, cert_arn=cert_arn.strip())
+
+    try:
+        os.remove(issued_certs_file)
+    except OSError:
+        pass

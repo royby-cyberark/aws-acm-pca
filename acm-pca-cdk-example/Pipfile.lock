@@ -1,0 +1,117 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "dfcfcb4f24d778936c2adce8baa8f0249724507558c62cd985aa338849de29e6"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "acm-pca-cdk": {
+            "editable": true,
+            "file": "file:///Users/Roy.BenYosef/dev/acm-pca-cdk"
+        },
+        "attrs": {
+            "hashes": [
+                "sha256:31b2eced602aa8423c2aea9c76a724617ed67cf9513173fd3a4f03e3a929c7e6",
+                "sha256:832aa3cde19744e49938b91fea06d69ecb9e649c93ba974535d08ad92164f700"
+            ],
+            "version": "==20.3.0"
+        },
+        "aws-cdk-aws-acmpca": {
+            "hashes": [
+                "sha256:34791f6d727e8e0eb2a2c126bd108df9bb5ea717d2a6091c3f76074589b6ba74"
+            ],
+            "version": "==1.85.0"
+        },
+        "aws-cdk.cloud-assembly-schema": {
+            "hashes": [
+                "sha256:9616458cc87683570592ce3b2ce4b5ebcdb4dc8f382c8060744592da65cf167c",
+                "sha256:b1ed1af43c2edabe79286dae57f08875a2aad0ea90b742c5006c5440dea2f0ea"
+            ],
+            "version": "==1.85.0"
+        },
+        "aws-cdk.core": {
+            "hashes": [
+                "sha256:c1cd2718c871d101d5f67ae1768185d8f3efa3922a8c36015feac95e0935016c",
+                "sha256:e470765ec692ae535f1ac13ec775b638e281749d8e54cdde0f3e27c8b062bf96"
+            ],
+            "version": "==1.85.0"
+        },
+        "aws-cdk.cx-api": {
+            "hashes": [
+                "sha256:6bba01555d5202489e7ebd39a1ff2c4692888d06d22caa3badf67fc3ab8d7b4c",
+                "sha256:6ffbe68ff2aafef6536dac010a669c9e333e742e2f3d06ad235ddcfe38c9eb02"
+            ],
+            "version": "==1.85.0"
+        },
+        "aws-cdk.region-info": {
+            "hashes": [
+                "sha256:47b751836b14541aa8e459ecb904749a04cd8dd42a616b3871eae8d2b1fbeee3",
+                "sha256:df599972c2ffdd7f547be577058d3114ab5bed12669bf9aca60a181a88201b12"
+            ],
+            "version": "==1.85.0"
+        },
+        "cattrs": {
+            "hashes": [
+                "sha256:967ce8f99b79f112a500fc03d02c4da669966055ea190b0c59a023af0ae33e5f",
+                "sha256:a5873cd4745a74388557730247b4bb005d762f8aba0ab7aa55bcbd190bdf3322"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==1.1.2"
+        },
+        "constructs": {
+            "hashes": [
+                "sha256:8136ca57a8e502c815f08e7fc1730e26b43345ef904bfdb998003135e0be96b6",
+                "sha256:979b4f2a86b0ae55544cef94c24948897277b9e184407968e858d5e18f77d0fc"
+            ],
+            "version": "==3.2.109"
+        },
+        "jsii": {
+            "hashes": [
+                "sha256:635fa13f4b830068ec87cec8f5b927178255402f9cac97be31faa0146e279be0",
+                "sha256:c8edad903bad63b4f338c88c5afb4bf31a7668bc08916dabff37c2780551fd6c"
+            ],
+            "version": "==1.17.1"
+        },
+        "publication": {
+            "hashes": [
+                "sha256:0248885351febc11d8a1098d5c8e3ab2dabcf3e8c0c96db1e17ecd12b53afbe6",
+                "sha256:68416a0de76dddcdd2930d1c8ef853a743cc96c82416c4e4d3b5d901c6276dc4"
+            ],
+            "version": "==0.0.3"
+        },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c",
+                "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
+            ],
+            "version": "==2.8.1"
+        },
+        "six": {
+            "hashes": [
+                "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259",
+                "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
+            ],
+            "version": "==1.15.0"
+        },
+        "typing-extensions": {
+            "hashes": [
+                "sha256:7cb407020f00f7bfc3cb3e7881628838e69d8f3fcab2f64742a5e76b2f841918",
+                "sha256:99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c",
+                "sha256:dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f"
+            ],
+            "version": "==3.7.4.3"
+        }
+    },
+    "develop": {}
+}
