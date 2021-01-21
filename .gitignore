@@ -1,0 +1,5 @@
+/csr
+/private
+/.venv
+/.pytest_cache
+temp_stuff
