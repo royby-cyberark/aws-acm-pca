@@ -23,7 +23,6 @@ def revoke_cert(ca_arn, cert_arn):
     print(issuer)
     # issued_by = issuer.CN
     serial = format(cert.get_serial_number(), 'x')
-    # serial = ':'.join(serial[i:i+2] for i in range(0, len(serial), 2))
     print(f'Serial: {serial}')
 
     response = client.revoke_certificate(
